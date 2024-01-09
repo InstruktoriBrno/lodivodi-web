@@ -63,6 +63,7 @@ body {
   font-style: normal;
   color: #074882ff;
   overflow-x: hidden;
+  background-color: #0080d2;
 }
 
 * {
@@ -1141,3 +1142,79 @@ p {
   background: rgba(146, 215, 255, 0.9);
 }
 
+
+
+.rudder-container {
+  position: relative;
+  width: 750px;
+  height: 800px;
+  margin: auto;
+  margin-bottom: 200px;
+}
+.rudder-stick {
+  position: absolute;
+  width: 220px; /* Width of the stick */
+  height: 220px; /* Height of the stick */
+  text-align: center;
+}
+.rudder-stick img {
+  width: 100%; /* Adjust as needed */
+  height: auto;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+/* Calculate positions for each stick */
+/* Adjust the '50%' and '-50px' to center the sticks based on their size */
+.stick-1 { top: 50%; left: 100%; transform: translate(-110px, -50px); }
+.stick-2 { top: 14.64%; left: 67%; transform: translate(-110px, -50px); }
+.stick-3 { top: 14.64%; left: 33%; transform: translate(-110px, -50px); }
+.stick-4 { top: 50%; left: 0%; transform: translate(-110px, -50px); }
+.stick-5 { top: 85.36%; left: 33%; transform: translate(-110px, -50px); }
+.stick-6 { top: 85.36%; left: 67%; transform: translate(-110px, -50px); }
+
+.team-info .text{
+  font-size: 12px;
+  max-width: 85%;
+  text-align: left;
+  margin: auto;
+  color: #074882ff;
+
+}
+
+.team-name{
+  color: #eff3f6;
+}
+
+.team-box{
+  position: absolute;
+  margin: auto;
+  margin-bottom: 30px;
+  max-width: 250px;
+  text-align: center;  
+  padding-bottom: 20px;
+  background-color: rgba(146, 215, 255, 0.6);
+  /*background-color: #074882ff;*/
+  border-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+@media (max-width: 767px) {
+  .team-box {
+    position: relative;
+  }
+}
+
+.team-wrapper {
+  margin: auto;
+  position: relative;
+  z-index: 10; /* Ensures overlay on top of other content */
+  min-height: 350px; /* Adjust as needed to reserve space */
+}
+
+.team-box img {
+  border-radius: 50px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+}
