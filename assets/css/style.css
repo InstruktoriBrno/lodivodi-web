@@ -216,14 +216,27 @@ body {
   line-height: 48px;
   border-radius: 8px;
   border: 0;
-  color: #eff3f6;
+  color: rgba(146, 215, 255, 1);
   cursor: pointer;
   z-index: 5;
   background: #074882ff;
   background-size: 200%;
-  margin-bottom:10px; 
-  margin-top:10px;
+  margin-bottom:0px; 
+  margin-top:30px;
 }
+
+.main-btn.active, .main-btn:hover {
+  color: #eff3f6;
+}
+
+.odkaz{
+  color: #eff3f6;
+}
+
+.odkaz.active, .odkaz:hover {
+  color: #074882ff;
+}
+
 
 
 /*===== All SECTION TITLE Style ===== #2d8dd9ff 0%, #074882ff*/
@@ -533,7 +546,7 @@ body {
 
 .navbar-nav .nav-item .sub-menu li a.active, .navbar-nav .nav-item .sub-menu li a:hover {
   padding-left: 25px;
-  color: #0064ab;
+  color: rgba(146, 215, 255, 1);
 }
 
 .navbar-nav .sub-nav-toggler {
@@ -633,7 +646,7 @@ body {
 }
 
 .sticky .navbar-nav .nav-item.active>a, .sticky .navbar-nav .nav-item:hover>a {
-  color: #0080d2;
+  color: rgba(146, 215, 255, 1);
 }
 
 
@@ -675,7 +688,7 @@ body {
 }
 
 .header-hero-content .header-sub-title {
-  font-family: "textfont";
+  font-family: "title";
   text-align: center;
   font-size: 40px;
   color: #074882ff;
