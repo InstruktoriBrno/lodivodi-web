@@ -155,7 +155,7 @@ p {
 }
 
 body {
-  background-image: url(../images/horni_cast_final_white_top.png),url(../images/voda_ostrov.PNG);
+  background-image: url(/assets/images/horni_cast_final_white_top.png),url(/assets/images/voda_ostrov.PNG);
   /*url(../images/voda.png), 
   url(../images/ostrov_dole.png), 
   url(../images/pevnina.png), 
