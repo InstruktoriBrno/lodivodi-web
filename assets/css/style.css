@@ -35,7 +35,7 @@
 
 @font-face {
   font-family: 'title';
-  src: url("../fonts/LibreBaskerville-Bold.ttf") format("opentype");
+  src: url("../fonts/Lora-VariableFont_wght.ttf") format("opentype");
 }
 
 @font-face {
@@ -50,7 +50,7 @@
 
 @font-face {
   font-family: 'textfontBold';
-  src: url("../fonts/Comfortaa-Bold.ttf") format('truetype');
+  src: url("../fonts/static/Catamaran-Medium.ttf") format('truetype');
   /* Safari, Android, iOS */
 }
 
@@ -112,7 +112,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "textfontBold";
+  font-family: "textfont";
   color: #074882ff;
   margin: 0px;
 }
@@ -164,7 +164,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat, repeat;
   width: 100%;
-  height: 100%;
+  height: auto;
   z-index: -1;
   background-position: 0px -200px;
 }
@@ -211,8 +211,8 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 0px 20px;
-  font-size: 25px;
+  padding: 5px 20px;
+  font-size: 30px;
   line-height: 48px;
   border-radius: 8px;
   border: 0;
@@ -221,8 +221,8 @@ body {
   z-index: 5;
   background: #074882ff;
   background-size: 200%;
-  margin-bottom:0px; 
-  margin-top:30px;
+  margin-bottom:-20px; 
+  margin-top:10px;
 }
 
 .main-btn.active, .main-btn:hover {
@@ -807,7 +807,7 @@ body {
   width: 100%;
   display: grid;
   border-radius: 20px;
-  background: rgba(146, 215, 255, 0.7);/*rgba(0, 100, 171, 0.6);*/
+  background: rgba(146, 215, 255, 0.9);/*rgba(0, 100, 171, 0.6);*/
 }
 
 .info-image {
@@ -839,25 +839,18 @@ body {
   padding-bottom: 50px
 }
 
-.prac-info-content {
-}
-
-.prac-info-content .section-title .title {
-  
-}
 
 .team-area .text {
   text-align: justify;
   margin-top: 15px;
-  color: #eff3f6;
+  /*color: #eff3f6;*/
 }
 
-.prac-info-content .text {
-  text-align: justify;
+.team-content .text {
+  text-align: center;
   margin-top: 15px;
-  color: #eff3f6;
+  color: #074882ff;/*#eff3f6;*/
 }
-
 
 .logo{
   margin-left: auto;
@@ -1165,6 +1158,11 @@ body {
   background: rgba(146, 215, 255, 0.9);
 }
 
+.text-box .text{
+  font-size: 20px;
+  font-style: italic;
+}
+
 
 
 .rudder-container {
@@ -1250,14 +1248,19 @@ body {
 .medailonky{
   background-image: url(../images/kormidlo_nobackground.png);
   background-size: contain;
-  background-position: 48% -30px;
+  background-position: 48% 15px;
   background-repeat: no-repeat;
 }
 
+@media (max-width: 1200px) {
+  .medailonky {
+    background-position: 48% -10px;
+  }
+}
 
 @media (max-width: 987px) {
   .medailonky {
-    background-position: 48% 0px;
+    background-position: 48% 30px;
   }
 }
 
